@@ -25,8 +25,8 @@ async def start(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('🔥Support Group🔥', 'https://t.me/ultraux_official'),
-        Button.url('⚡️Main Bot⚡️', 't.me/ultraux_bot'),
+        Button.url('🔥Support🔥', 'https://t.me/terayaarhoomai'),
+        Button.url('⚡️channel⚡️', 't.me/maxopeditz'),
         Button.url('💥Owner💥', 't.me/digvijaysingh178'),
         Button.url('♻️Commands♻️', 'https://telegra.ph/UltraUX-Mention-Bot-Commands-11-09')
       ]
@@ -41,14 +41,14 @@ async def help(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('📣 Support Group', 'https://t.me/ultraux_official'),
-        Button.url('Main Bot', 't.me/ultraux_bot')
+        Button.url('🦋 Support ', 'https://t.me/terayaarhoomai'),
+        Button.url('🦋owner', 't.me/cute_boy701')
       ]
     )
   )
   
-@client.on(events.NewMessage(pattern="^/mentionall ?(.*)"))
-async def mentionall(event):
+@client.on(events.NewMessage(pattern="^/all ?(.*)"))
+async def all(event):
   chat_id = event.chat_id
   if event.is_private:
     return await event.respond("__This command can be use in groups and channels! for more support visit @ultraux_official__")
@@ -84,9 +84,9 @@ async def mentionall(event):
     mode = "text_on_reply"
     msg = await event.get_reply_message()
     if msg == None:
-        return await event.respond("__I can't mention members for older messages! (messages which are sent before I'm added to group for more support visit @ultraux_official)__")
+        return await event.respond("__I can't mention members for older messages! (messages which are sent before I'm added to group for more support visit @terayaarhoomai")
   else:
-    return await event.respond("__Reply to a message or give me some text to mention others! for more support visit @ultraux_official__")
+    return await event.respond("__Reply to a message or give me some text to mention others! for more support visit @terayaarhoomai")
   
   spam_chats.append(chat_id)
   usrnum = 0
