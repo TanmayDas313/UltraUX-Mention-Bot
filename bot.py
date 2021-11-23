@@ -25,10 +25,10 @@ async def start(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('🔥Support🔥', 'https://t.me/terayaarhoomai'),
-        Button.url('⚡️channel⚡️', 't.me/maxopeditz'),
-        Button.url('💥Owner💥', 't.me/digvijaysingh178'),
-        Button.url('♻️Commands♻️', 'https://telegra.ph/UltraUX-Mention-Bot-Commands-11-09')
+        Button.url('🦋Support🦋', 'https://t.me/terayaarhoomai'),
+        Button.url('🦋channel🦋', 't.me/maxopeditz'),
+        Button.url('🦋Owner🦋', 't.me/cute_boy701'),
+        Button.url('🦋Commands🦋', 'https://telegra.ph/UltraUX-Mention-Bot-Commands-11-09')
       ]
     )
   )
