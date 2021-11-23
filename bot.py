@@ -47,8 +47,8 @@ async def help(event):
     )
   )
   
-@client.on(events.NewMessage(pattern="^/all ?(.*)"))
-async def all(event):
+@client.on(events.NewMessage(pattern="^/mentionall ?(.*)"))
+async def mentionall(event):
   chat_id = event.chat_id
   if event.is_private:
     return await event.respond("__This command can be use in groups and channels! for more support visit @ultraux_official__")
@@ -73,7 +73,7 @@ async def all(event):
     ):
       is_admin = True
   if not is_admin:
-    return await event.respond("__Only admins can mention all! for more support visit @ultraux_official__")
+    return await event.respond("__Only admins can mention all! for more support visit @terayaarhoomai")
   
   if event.pattern_match.group(1) and event.is_reply:
     return await event.respond("__Give me one argument!__")
