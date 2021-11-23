@@ -1,7 +1,7 @@
 {
-    "name": "UltraUX Mention Bot",
+    "name": "Lucky Mention Bot",
     "description": "A simple/useful mention bot for telegram.",
-    "logo": "https://telegra.ph/file/e0d298122a77298661478.jpg",
+    "logo": "https://telegra.ph/file/0824baeceeb1f6d3223de.jpg",
     "env": {
         "TOKEN": {
             "description": "Enter bot token."
